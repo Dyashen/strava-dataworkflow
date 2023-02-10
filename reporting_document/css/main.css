@@ -1,0 +1,134 @@
+body{
+    width:100%;
+    background-color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container_index{
+    padding: 2.5%;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 10px 10px 50px #ccc;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.container_graphs{
+    width:100%;
+}
+
+.container_reports{
+    padding: 2%;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 10px 10px 50px #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.container_tables{
+    display: flex;
+    width:800px;
+}
+
+.container_table1, .container_table2{
+    overflow: scroll;
+    width:100%;
+    max-height: 500px;
+}
+
+.contentrow{
+    background-color: white;
+    height: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 2.5%;
+    margin-bottom:2.5%;
+    padding:2%;
+    width:80%;
+}
+
+.contentrow h3{
+    text-align: center;
+}
+
+.contentrow img{
+    width: 30%;
+    margin: auto;
+}
+
+.text{
+    width:80%;
+    font-family: sans-serif;
+    vertical-align: middle;
+}
+
+.redirects{
+    margin:auto;
+    width:60%;
+}
+
+img{
+    margin: 5%;
+    width: 20%;
+    max-width: 40%;
+}
+
+img.logo{
+    width: 5%;
+    margin:auto;
+}
+
+table{
+    margin: 2.5%;
+    padding: 2.5%;
+    background-color: aliceblue;
+    border-radius: 5%;
+    font-size: small;
+}
+
+table a{
+    color:black;
+    text-decoration: none;
+}
+
+table a:hover{
+    color:#FFD580;
+}
+
+
+.redirects button {
+    display: inline-block;
+    padding: 1% 2%;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #FFD580;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .redirects button:hover {background-color: #ffebc2}
+  
+  .redirects button:active {
+    background-color: #ffebc2;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+ th {
+    position: sticky;
+    top: 0;
+    background: white;
+ }
