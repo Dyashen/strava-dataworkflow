@@ -1,18 +1,20 @@
 # Data-workflow STRAVA-API
 
-## Inleiding
+## Intro
 
-Voor de NPE van het opleidingsonderdeel "Infrastructure Automation" zocht ik naar een vrij beschikbare, REST-driven API. Tijdens het zoeken keek ik naar mijn interesse in de sportwereld en het opkomend fenomeen dat Strava noemt. Strava is een platform gericht op sporters en atleten van alle kwaliteiten en capaciteiten.
+I was searching for a freely available, REST-driven API for the NPE of the course 'Infrastructure Automation'. While searching, I considered my interest in the sports world and the emerging phenomenon called Strava. Strava is a platform focused on athletes of all abilities and skill levels.
 
-## Benodigdheden:
+Update: 7-03: I'm investigating the options to make both the web-app and gathering system run on a docker or vagrant like system. I'll keep you noted.
 
-Er zijn drie benodigdheden bij het bouwen van een applicatie met de Strava API.
+## Requirements:
 
-Requests sturen naar Strava vergt een zekere inspanning. Allereerst moet je je **account gaan registreren als 'developer-account'**. Dit heeft noch gevolgen op je prestraties als sporter, noch op je verzamelde prestaties. Bij deze registratie moet je een korte uitleg voorzien waarover je applicatie, dat verbonden is met de Strava-API, zal gaan. Dit proces duurt hoogstens twee weken.
+There are three requirements when building an application using the Strava API.
 
-Eenmaal geregistreerd zal je een **toegangstoken en een ververstoken** krijgen. Het toegangstoken vervalt na zes uur en dit kan je enkel ophalen met de ververstoken. De ververstoken verandert niet en blijft statisch. Dit is iets waar je rekening mee moet houden bij het sturen van de GET of POST-requests. Meer info over de authenticatie vindt u [hier](https://developers.strava.com/docs/authentication/).
+Sending requests to Strava requires some effort. First, you must register your account as a developer account. This will not have any impact on your performance as an athlete or your collected activities. During this registration, you must provide a brief explanation of what your application, which is connected to the Strava API, will be about. This process takes no more than two weeks.
 
-Alle mogelijke requests kan je terugvinden op de documentatie van Strava. Klik [hier](https://developers.strava.com/docs/reference/) om de documentatie te bekijken.
+Once registered, you will receive an access token and a refresh token. The access token expires after six hours and can only be retrieved using the refresh token. The refresh token does not change and remains static. This is something to keep in mind when sending GET or POST requests. More information on authentication can be found [here](https://developers.strava.com/docs/authentication/).
+
+You can find all possible requests in the Strava documentation. Click [here](https://developers.strava.com/docs/reference/). to view the documentation.
 
 ## Mappenstructuur:
 
@@ -35,7 +37,7 @@ data-workflow/
 ----------------------------------------------------
 ```
 
-## Het verzamelen van data.
+## Data gathering
 
 Ik wilde voor deze opdracht statistieken weergeven van vier verschillende groepen. Hiervoor zal ik een manier van verzameling moeten inschakelen. Om deze fase tot een goed eind te brengen werk ik met *curl*. Alle code voor deze fase kan worden teruggevonden in ```DataGathering.sh```.
 
