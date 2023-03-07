@@ -1,10 +1,3 @@
----
-title: Data-workflow STRAVA-API
-author: Dylan Cluyse
-mainfont: Montserrat-Regular.ttf
-chapterfont: Montserrat-Black.ttf
----
-
 # Data-workflow STRAVA-API
 
 ## Inleiding
